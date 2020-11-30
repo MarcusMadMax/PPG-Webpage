@@ -608,6 +608,7 @@ header{
                     font-weight: 300;
                     color: $white-color;
                     line-height: 1.25em;
+                    text-transform: uppercase;
                 }
             }
 
@@ -649,7 +650,7 @@ header{
             }
 
             @include respond-to('bp3'){
-                height: 100vh;
+                height: 80vh;
 
                 .main-section-am-cup-bkg{
                     bottom: -5vh;
@@ -664,11 +665,11 @@ header{
                 }
         
                 .main-section-txt{
-                    width: 60vw;
+                    width: 50vw;
                     padding: 0 1em 15em 2em;
                     
                     h1{
-                        font-size: 4vw;
+                        font-size: 2.5vw;
                     }
                 }
             }
@@ -792,7 +793,7 @@ header{
                     .what-we-do-section-content-header{
 
                         h1{
-                            font-size: 5em;
+                            font-size: 4em;
                         }
                     }
                 }
@@ -803,10 +804,6 @@ header{
                 .what-we-do-section-content{
 
                     .what-we-do-section-content-header{
-
-                        h1{
-                            font-size: 6em;
-                        }
 
                         .brush-stroke{
                             width: 40%;
@@ -990,32 +987,68 @@ header{
                         z-index: 5;
                         width: 100%;
                         text-align: center;
-                        font-size: 3em;
+                        font-size: 2em;
                         color: $ppg-blue;
-                        font-weight: 700;
+                        text-transform: uppercase;
                     }
 
                     .brush-stroke{
                         display: block;
-                        width: 70vw;
-                        margin: -3vh auto 0 auto;
+                        width: 55vw;
+                        height: 1em;
+                        margin: -2vh auto 0 auto;
                     }
                 }
 
                 .clients{
-                    width: 80%;
-                    margin: 1em auto 1em auto;
+                    width: 70%;
+                    margin: 0 auto 1em auto;
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
 
                     img{
                         border: 1px solid transparent;
-                        width: 10vw;
+                        width: 3vw;
                         height: auto;
                         display: block;
-                        flex: 1 0 15%;
-                        margin: 1em;
+                        flex: 0 0 15%;
+                        margin: 1em auto;
                         filter: grayscale(100%);
+                    }
+                }
+            }
+
+            @include respond-to('bp1.5'){
+                .clients-section-content{
+
+                    .clients-section-content-header{
+
+                        h1{
+                            font-size: 3em;
+                        }
+
+                        .brush-stroke{
+                            width: 40vw;
+                            height: 1.5em;
+                        }
+                    }
+
+                    .clients{
+                        width: 70%;
+                        margin: 3em auto 1em auto;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        img{
+                            border: 1px solid transparent;
+                            width: 3vw;
+                            height: auto;
+                            display: block;
+                            flex: 0 0 15%;
+                            margin: 1em;
+                            filter: grayscale(100%);
+                        }
                     }
                 }
             }
@@ -1049,21 +1082,25 @@ header{
 
                         h1{
                             padding-top: 1em;
-                            font-size: 8em;
+                            font-size: 4em;
+                            font-weight: 100;
+                            letter-spacing: .25em;
                         }
 
                         .brush-stroke{
                             width: 40em;
-                            margin-top: -4em;
+                            height: 3em;
+                            margin-top: -2.5em;
                         }
                     }
 
                     .clients{
-                        width: 90vw;
+                        width: 70vw;
                         padding: 2em 0;
 
                         img{
-                            flex: 0 0 2em;
+                            flex: 0 0 8em;
+                            margin: 3em;
 
                             &:hover{
                                 filter: grayscale(0%);
@@ -1093,10 +1130,17 @@ header{
 
                 h1{
                     text-transform: uppercase;
+                    position: relative;
+                    z-index: 5;
                     color: $ppg-blue;
-                    font-weight: 700;
                     font-size: 2em;
                     text-align: center;
+                }
+
+                .brush-stroke{
+                    display: block;
+                    width: 65vw;
+                    margin: -3.5vh auto 0 auto;
                 }
 
                 p{
@@ -1112,6 +1156,22 @@ header{
                     width: 50vw;
                     margin: 0 auto;
                     padding-top: 1em;
+                }
+            }
+
+            @include respond-to('bp1.5'){
+
+                .sustainability-certification{
+
+                    h1{
+                        font-size: 3em;
+                    }
+
+                    .brush-stroke{
+                        display: block;
+                        width: 55vw;
+                        margin: -3.5vh auto 0 auto;
+                    }
                 }
             }
 
@@ -1144,25 +1204,33 @@ header{
                 .sustainability-certification{
 
                     h1{
-                        font-size: 6em;
-                        color: $ppg-blue;
+                        font-size: 4em;
+                        font-weight: 100;
+                        letter-spacing: .25em;
+                    }
+
+                    .brush-stroke{
+                        width: 45em;
+                        height: 3.5em;
+                        margin-top: -2.5em;
                     }
 
                     p{
-                        font-size: 2em;
-                        margin: 1em 0 0 0;
+                        width: 60vw;
+                        margin: 1em auto;
+                        font-size: 1.25em;
                     }
-                }
                 
-                .sustainability-certification-img{
+                    .sustainability-certification-img{
 
-                    img{
-                        width: 40vw;
+                        img{
+                            width: 40vw;
+                        }
                     }
-                }
 
-                &::after{
-                    top: 60vh;
+                    &::after{
+                        top: 60vh;
+                    }
                 }
             }
         }
@@ -1353,6 +1421,7 @@ header{
                 left: 50%;
                 transform: translateX(-50%);
                 width: 90vw;
+                height: auto;
                 height: .01em;
                 background-color: $highlight-color;
             }

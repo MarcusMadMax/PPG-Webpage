@@ -632,6 +632,7 @@ header .style-nav-bar-out {
   font-weight: 300;
   color: #fff;
   line-height: 1.25em;
+  text-transform: uppercase;
 }
 
 @media (min-width: 45em) {
@@ -671,7 +672,7 @@ header .style-nav-bar-out {
 
 @media (min-width: 75em) {
   .home-page main .main-section {
-    height: 100vh;
+    height: 80vh;
   }
   .home-page main .main-section .main-section-am-cup-bkg {
     bottom: -5vh;
@@ -684,11 +685,11 @@ header .style-nav-bar-out {
     width: 200vw;
   }
   .home-page main .main-section .main-section-txt {
-    width: 60vw;
+    width: 50vw;
     padding: 0 1em 15em 2em;
   }
   .home-page main .main-section .main-section-txt h1 {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -944,14 +945,11 @@ header .style-nav-bar-out {
 
 @media (min-width: 55em) {
   .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 }
 
 @media (min-width: 75em) {
-  .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header h1 {
-    font-size: 6em;
-  }
   .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header .brush-stroke {
     width: 40%;
   }
@@ -1092,38 +1090,73 @@ header .style-nav-bar-out {
   z-index: 5;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   color: #0A57A4;
-  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .about-page main .clients-section .clients-section-content .clients-section-content-header .brush-stroke {
   display: block;
-  width: 70vw;
-  margin: -3vh auto 0 auto;
+  width: 55vw;
+  height: 1em;
+  margin: -2vh auto 0 auto;
 }
 
 .about-page main .clients-section .clients-section-content .clients {
-  width: 80%;
-  margin: 1em auto 1em auto;
+  width: 70%;
+  margin: 0 auto 1em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-page main .clients-section .clients-section-content .clients img {
   border: 1px solid transparent;
-  width: 10vw;
+  width: 3vw;
   height: auto;
   display: block;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 15%;
-          flex: 1 0 15%;
-  margin: 1em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+  margin: 1em auto;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+@media (min-width: 45em) {
+  .about-page main .clients-section .clients-section-content .clients-section-content-header h1 {
+    font-size: 3em;
+  }
+  .about-page main .clients-section .clients-section-content .clients-section-content-header .brush-stroke {
+    width: 40vw;
+    height: 1.5em;
+  }
+  .about-page main .clients-section .clients-section-content .clients {
+    width: 70%;
+    margin: 3em auto 1em auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-page main .clients-section .clients-section-content .clients img {
+    border: 1px solid transparent;
+    width: 3vw;
+    height: auto;
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    margin: 1em;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
 }
 
 @media (min-width: 55em) {
@@ -1141,20 +1174,24 @@ header .style-nav-bar-out {
 @media (min-width: 75em) {
   .about-page main .clients-section .clients-section-content .clients-section-content-header h1 {
     padding-top: 1em;
-    font-size: 8em;
+    font-size: 4em;
+    font-weight: 100;
+    letter-spacing: .25em;
   }
   .about-page main .clients-section .clients-section-content .clients-section-content-header .brush-stroke {
     width: 40em;
-    margin-top: -4em;
+    height: 3em;
+    margin-top: -2.5em;
   }
   .about-page main .clients-section .clients-section-content .clients {
-    width: 90vw;
+    width: 70vw;
     padding: 2em 0;
   }
   .about-page main .clients-section .clients-section-content .clients img {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 2em;
-            flex: 0 0 2em;
+        -ms-flex: 0 0 8em;
+            flex: 0 0 8em;
+    margin: 3em;
   }
   .about-page main .clients-section .clients-section-content .clients img:hover {
     -webkit-filter: grayscale(0%);
@@ -1184,10 +1221,17 @@ header .style-nav-bar-out {
 
 .about-page main .sustainability-section .sustainability-certification h1 {
   text-transform: uppercase;
+  position: relative;
+  z-index: 5;
   color: #0A57A4;
-  font-weight: 700;
   font-size: 2em;
   text-align: center;
+}
+
+.about-page main .sustainability-section .sustainability-certification .brush-stroke {
+  display: block;
+  width: 65vw;
+  margin: -3.5vh auto 0 auto;
 }
 
 .about-page main .sustainability-section .sustainability-certification p {
@@ -1200,6 +1244,17 @@ header .style-nav-bar-out {
   width: 50vw;
   margin: 0 auto;
   padding-top: 1em;
+}
+
+@media (min-width: 45em) {
+  .about-page main .sustainability-section .sustainability-certification h1 {
+    font-size: 3em;
+  }
+  .about-page main .sustainability-section .sustainability-certification .brush-stroke {
+    display: block;
+    width: 55vw;
+    margin: -3.5vh auto 0 auto;
+  }
 }
 
 @media (min-width: 55em) {
@@ -1221,17 +1276,24 @@ header .style-nav-bar-out {
 
 @media (min-width: 75em) {
   .about-page main .sustainability-section .sustainability-certification h1 {
-    font-size: 6em;
-    color: #0A57A4;
+    font-size: 4em;
+    font-weight: 100;
+    letter-spacing: .25em;
+  }
+  .about-page main .sustainability-section .sustainability-certification .brush-stroke {
+    width: 45em;
+    height: 3.5em;
+    margin-top: -2.5em;
   }
   .about-page main .sustainability-section .sustainability-certification p {
-    font-size: 2em;
-    margin: 1em 0 0 0;
+    width: 60vw;
+    margin: 1em auto;
+    font-size: 1.25em;
   }
-  .about-page main .sustainability-section .sustainability-certification-img img {
+  .about-page main .sustainability-section .sustainability-certification .sustainability-certification-img img {
     width: 40vw;
   }
-  .about-page main .sustainability-section::after {
+  .about-page main .sustainability-section .sustainability-certification::after {
     top: 60vh;
   }
 }
@@ -1405,6 +1467,7 @@ header .style-nav-bar-out {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 90vw;
+  height: auto;
   height: .01em;
   background-color: #cecece;
 }

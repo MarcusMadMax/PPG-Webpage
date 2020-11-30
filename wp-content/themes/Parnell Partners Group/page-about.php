@@ -67,7 +67,7 @@
             <div class="clients-section-content">
                 <div class="clients-section-content-header">
                     <h1>Our Clients</h1>
-                    <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/black-brush-strokes-design/brush-strokes.svg" alt="">
+                    <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/brush-stroke/brush-stroke.png" alt="">
                 </div>
                 <div class="clients">
                     <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/lexus-logo.png" alt="">
@@ -90,6 +90,7 @@
         <div class="sustainability-section">
             <div class="sustainability-certification">
                 <h1>We are certified</h1>
+                <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/brush-stroke/brush-stroke.png" alt="">
                 <p>The   origins   of  certification   are   in  the   manufacturing   industry,  with   greater,   direct  and   measurable environmental   impacts,   clearer   operating   systems   and   larger   organizations   (Tribe  et   al,   2000). Manufacturing   standards   were   set  by   the   European  Commission,   and   recognised   through  the   Eco-Management and Audit Scheme (EMAS) in 1993. This is based on the implementation of Environmental Management Systems, with clear benchmarks only specified for some industries. LA EMAS was devised for  local  authorities,  and is  the  only version  for  the service sector. In  1996,  the International  Standards Organisation set ISO 14001, which awards whole organisations for any industry (Tribe et al, 2000), and it has been achieved by a handful of tourism organisations, such as Center Parcs UK (Collins, 2000)</p>
             </div>
             <div class="sustainability-certification-img">
