@@ -84,7 +84,7 @@ $(function () {
     }
 })
 
-if ($('#firstName #lastName #email .form').length > 0) {
+
     //Form
     //Event handler
     function checkFilledIn() {
@@ -159,7 +159,7 @@ if ($('#firstName #lastName #email .form').length > 0) {
     }
 
 
-
+// if ($('#firstName #lastName #email .form').length > 0) {
     //Main programm
     var oFirstName = document.querySelector('#firstName')
     oFirstName.addEventListener('blur', checkLetters)
@@ -174,7 +174,7 @@ if ($('#firstName #lastName #email .form').length > 0) {
     var oForm = document.querySelector('.form')
     oForm.addEventListener('submit', checkAll)
 
-}
+
 
 
 //Contact

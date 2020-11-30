@@ -26,32 +26,15 @@
           </div>
         
             <?php 
-                wp_nav_menu( array( 
-                'theme_location' => 'main-menu',
-                'container' => 'ul',
-                'menu_class' => 'nav-links'
+                wp_nav_menu(
+                  array( 
+                    'theme_location' => 'main-menu',
+                    'container' => 'ul',
+                    'menu_class' => 'nav-links'
+                  )
+                );
+              ?>
 
-                ));
-            ?>
-
-          <!-- <ul class="nav-links">
-            <li>
-              <a href="index.html">Home</a>
-              <span class="slider"></span>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-              <span class="slider"></span>
-            </li>
-            <li>
-              <a href="what-we-do.html">What we do</a>
-              <span class="slider"></span>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-              <span class="slider"></span>
-            </li>
-          </ul> -->
         </div>
         <div class="bars">
           <div class="bar1"></div>
