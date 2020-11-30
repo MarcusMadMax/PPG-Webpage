@@ -1,7 +1,7 @@
 const bars = document.querySelector('.bars')
 const nav = document.querySelector('.nav-links')
 const navLinks = document.querySelectorAll('.nav-links li')
-const navBarLogo = document.querySelector('li a img')
+const navBarLogo = document.querySelector('.logo a')
 const navBar = document.querySelector('nav')
 const navLinkA = document.querySelectorAll('.nav-links li a')
 const address = document.querySelector('.contact-city')
@@ -20,6 +20,9 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade 0.5s ease forwards  ${index / 7 + .5}s`
             }
         })
+
+        //Monbile logo comes in
+        navBarLogo.classList.toggle('navBarLogoReize')
 
         //Bars Animation
         bars.classList.toggle('toggle')

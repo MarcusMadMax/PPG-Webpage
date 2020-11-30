@@ -149,6 +149,24 @@ header{
         justify-content: space-between;
         align-items: center;
     
+        .logo{
+            position: relative;
+            z-index: 100;
+            width: auto;
+
+            a{
+                position: relative;
+                top: -3em;
+                display: block;
+                height: 3em;
+
+                img{
+                    display: block;
+                    height: 100%;
+                }
+            }
+        }
+        
         .nav-links{
             position: absolute;
             right: 0;
@@ -160,6 +178,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-top: 3em;
             width: 100%;
             transform: translateX(100%);
             transition: transform 0.5s ease-in;
@@ -212,28 +231,20 @@ header{
         }
     
         .navBarLogoReize{
-            transform: scale(1.8) translate(18vw, 9vh);
-            display: block;
+            transform: scale(2.5) translate(18vw, 9vh);
+            transition: all 1s ease-in-out;
         }
     
         @include respond-to('bp1.5'){
             padding: 0 2em;
         
-            .nav-links{
-                padding-top: 0;
-        
                 li{
         
                     a{
-                        font-size: 3em;
-
-                        img{
-                            width: auto;
-                            height: 5em;
-                        }
+                        font-size: 15em;
                     }
                 }
-            }
+            
         
         
             .bars{
@@ -259,7 +270,7 @@ header{
             }
     
             .navBarLogoReize{
-                transform: scale(1.8) translate(19vw, 7vh);
+                transform: scale(4.5) translate(10vw, 5vh);
             }
         }
     
@@ -301,7 +312,7 @@ header{
             }
     
             .navBarLogoReize{
-                transform: scale(2) translate(18vw, 7vh);
+                transform: scale(6) translate(8vw, 3vh);
             }
         }
     
@@ -313,12 +324,22 @@ header{
 
             .nav-top{
                 width: 100%;
+                display: flex;
+                align-items: center;
+
+                .logo{
+                    height: 7em;
+                    a{
+                        top: 0em;
+                        height: 100%;
+                    }
+                }
     
                 .nav-links{
                     position: relative;
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: flex-end;
                     height: 100%;
                     padding-top: 0;
                     top: 0;
@@ -382,7 +403,7 @@ header{
         }
     
         .style-logo-in{
-            transform: scale(.5);
+            transform: scale(.7);
             transition: all .5s ease-out;
         }
     
@@ -2020,7 +2041,7 @@ footer{
                 a{
                     text-decoration: none;
                     color: $white-color;
-                    font-size: 1.2em;
+                    font-size: 1em;
                 }
             }
             
@@ -2035,6 +2056,7 @@ footer{
 
         .footer-content{
             padding: 0 1em;
+
             .footer-content-top{
                 display: flex;
                 justify-content: space-between;
@@ -2124,7 +2146,7 @@ footer{
                 li{
                     
                     a{
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
                 }
             }
@@ -2134,7 +2156,7 @@ footer{
     @include respond-to('bp3'){
         
         img{
-            height: 16em;
+            height: 14em;
         }
 
         .footer-content{
@@ -2168,7 +2190,7 @@ footer{
     
             .footer-social{
                 display: block;
-                margin-left: 16em;
+                margin-left: 10em;
 
                 a{
                     margin: 0;
