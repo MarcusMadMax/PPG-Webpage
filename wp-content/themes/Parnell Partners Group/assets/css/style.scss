@@ -11,7 +11,7 @@ $white-color: #fff;
 @mixin image-links {
     position: relative;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     margin: 0 auto;
     width: 100vw;
 
@@ -722,7 +722,7 @@ header{
                     }
                 }
 
-                ul{
+                ul{                    
                     @include image-links;
                 }
 
@@ -807,23 +807,6 @@ header{
                         .brush-stroke{
                             width: 60%;
                             bottom: 1.5em;
-                        }
-                    }
-            
-                    ul{
-            
-                        li{
-                            flex: 1 0 25%;
-
-                            .list-items{
-
-                                .list-comments{
-
-                                    a{
-                                        font-size: 3em;
-                                    }
-                                }
-                            }
                         }
                     }
 

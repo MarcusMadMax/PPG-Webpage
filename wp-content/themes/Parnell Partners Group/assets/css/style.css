@@ -427,10 +427,6 @@ header .style-nav-bar-out {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 auto;
   width: 100vw;
 }
@@ -749,10 +745,6 @@ header .style-nav-bar-out {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 auto;
   width: 100vw;
 }
@@ -951,14 +943,6 @@ header .style-nav-bar-out {
   .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header .brush-stroke {
     width: 60%;
     bottom: 1.5em;
-  }
-  .home-page main .what-we-do-section .what-we-do-section-content ul li {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 25%;
-            flex: 1 0 25%;
-  }
-  .home-page main .what-we-do-section .what-we-do-section-content ul li .list-items .list-comments a {
-    font-size: 3em;
   }
   .home-page main .what-we-do-section .what-we-do-section-content .view-more a:hover {
     color: #1a1b26;

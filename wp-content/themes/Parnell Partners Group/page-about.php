@@ -63,25 +63,7 @@
         <!----------------- Clients Section ------------------->
         <!------------------------------------------------------->
 
-        <div class="clients-section">
-            <div class="clients-section-content">
-                <div class="clients-section-content-header">
-                    <h1>Our Clients</h1>
-                    <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/brush-stroke/brush-stroke.png" alt="">
-                </div>
-                <div class="clients">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/lexus-logo.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/toyota-togo-silver.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/qantas-airways-logo.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/australia-post-2.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/telstra.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/deutsche-bank.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/boeing-2.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/hp.png" alt="">
-                    <img class="fill" src="<?php echo get_template_directory_uri()?>/assets/img/clients/ingram-micro.svg" alt="">
-                </div>
-            </div>
-        </div>
+        <?php get_template_part('client')?>
 
         <!------------------------------------------------------------>
         <!----------------- Sustainability Section ------------------->
