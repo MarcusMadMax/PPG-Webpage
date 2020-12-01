@@ -402,7 +402,7 @@ header .style-nav-bar-out {
 
 @media (min-width: 75em) {
   .home-page main .quote-section {
-    height: 45vh;
+    height: 70vh;
   }
   .home-page main .quote-section h1 {
     font-size: 4em;
@@ -494,12 +494,11 @@ header .style-nav-bar-out {
   font-size: .75em;
   font-weight: 300;
   text-transform: uppercase;
-  width: 55%;
   display: block;
-  margin: 2em auto;
+  margin: 0 auto;
   border-radius: 5em;
   background-color: rgba(26, 27, 38, 0.9);
-  padding: .5em 0;
+  padding: .5em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
@@ -737,11 +736,12 @@ header .style-nav-bar-out {
 .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header .brush-stroke {
   position: absolute;
   z-index: 4;
-  bottom: .5em;
+  bottom: .7em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 70vw;
+  height: 2em;
 }
 
 .home-page main .what-we-do-section .what-we-do-section-content ul {
@@ -816,12 +816,11 @@ header .style-nav-bar-out {
   font-size: .75em;
   font-weight: 300;
   text-transform: uppercase;
-  width: 55%;
   display: block;
-  margin: 2em auto;
+  margin: 0 auto;
   border-radius: 5em;
   background-color: rgba(26, 27, 38, 0.9);
-  padding: .5em 0;
+  padding: .5em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
@@ -878,16 +877,15 @@ header .style-nav-bar-out {
   font-size: .75em;
   font-weight: 300;
   text-transform: uppercase;
-  width: 55%;
   display: block;
-  margin: 2em auto;
+  margin: 0 auto;
   border-radius: 5em;
   background-color: rgba(26, 27, 38, 0.9);
-  padding: .5em 0;
+  padding: .5em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
-  margin-bottom: 6em;
+  margin: 4em auto 6em auto;
   width: 40%;
   padding: .5em;
 }
@@ -951,7 +949,8 @@ header .style-nav-bar-out {
 
 @media (min-width: 75em) {
   .home-page main .what-we-do-section .what-we-do-section-content .what-we-do-section-content-header .brush-stroke {
-    width: 40%;
+    width: 60%;
+    bottom: 1.5em;
   }
   .home-page main .what-we-do-section .what-we-do-section-content ul li {
     -webkit-box-flex: 1;
@@ -1397,11 +1396,14 @@ header .style-nav-bar-out {
 }
 
 @media (min-width: 55em) {
+  .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-bkg {
+    height: 14em;
+  }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons {
     width: 70%;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .container {
-    margin-top: 6em;
+    margin-top: 2em;
   }
 }
 
@@ -1457,22 +1459,13 @@ header .style-nav-bar-out {
           transform: translateX(-50%);
   z-index: 0;
   width: 70vw;
-}
-
-.what-we-do-page main .quote-section ::before {
-  content: '';
-  position: absolute;
-  top: -1.25em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 90vw;
-  height: auto;
-  height: .01em;
-  background-color: #cecece;
+  height: 1em;
 }
 
 @media (min-width: 45em) {
+  .what-we-do-page main .quote-section {
+    padding: 2em 0 3em 0;
+  }
   .what-we-do-page main .quote-section h3 {
     font-size: 2em;
     padding: 0 .5em 0 .5em;
@@ -1487,18 +1480,14 @@ header .style-nav-bar-out {
 
 @media (min-width: 55em) {
   .what-we-do-page main .quote-section {
-    margin-top: 7em;
+    padding-bottom: 4em;
   }
   .what-we-do-page main .quote-section h3 {
     font-size: 2em;
-    padding-top: 1em;
   }
   .what-we-do-page main .quote-section .brush-stroke {
     width: 60vw;
     bottom: 2em;
-  }
-  .what-we-do-page main .quote-section::before {
-    margin-top: -25em;
   }
 }
 
@@ -1588,9 +1577,14 @@ header .style-nav-bar-out {
 .contact-page main .contact-form-section {
   background-color: #1A1B26;
   width: 100vw;
+  padding-top: 2em;
 }
 
-.contact-page main .contact-form-section .form {
+.contact-page main .contact-form-section .screen-reader-response {
+  display: none;
+}
+
+.contact-page main .contact-form-section form {
   position: relative;
   z-index: 5;
   display: -webkit-box;
@@ -1602,30 +1596,26 @@ header .style-nav-bar-out {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #cecece;
+  width: 100%;
 }
 
-.contact-page main .contact-form-section .form .group {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 90%;
-          flex: 0 0 90%;
-  margin: 0;
+.contact-page main .contact-form-section form .head p {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.contact-page main .contact-form-section .form .group p {
-  font-size: 1.5em;
+.contact-page main .contact-form-section form .head p label {
   color: #cecece;
-  font-weight: 300;
-  padding-left: .5em;
-  margin-bottom: 0;
-  margin-top: 1em;
+  font-size: 1.25em;
+  font-weight: 100;
 }
 
-.contact-page main .contact-form-section .form .group .formGroup :focus {
-  color: #0A57A4;
+.contact-page main .contact-form-section form .head p label span {
+  color: #FA0029;
 }
 
-.contact-page main .contact-form-section .form .group .formGroup input {
-  font-size: 2em;
+.contact-page main .contact-form-section form .head p label input {
+  font-size: 1em;
   padding: .25em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1635,38 +1625,19 @@ header .style-nav-bar-out {
   background-color: #cecece;
 }
 
-.contact-page main .contact-form-section .form .group .formGroup textarea {
-  width: 100%;
-  margin: 0 auto;
-  outline: none;
-  border-radius: .15em;
-  padding: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #1A1B26;
-  background-color: #cecece;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.5em;
-}
-
-.contact-page main .contact-form-section .form .submit {
-  margin: 2em 0;
+.contact-page main .contact-form-section form input[type=submit] {
   text-align: center;
-  width: 100%;
-}
-
-.contact-page main .contact-form-section .form .submit input {
+  width: 50%;
   position: relative;
   z-index: 5;
   font-size: .75em;
   font-weight: 300;
   text-transform: uppercase;
-  width: 55%;
   display: block;
-  margin: 2em auto;
+  margin: 0 auto;
   border-radius: 5em;
   background-color: rgba(26, 27, 38, 0.9);
-  padding: .5em 0;
+  padding: .5em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
@@ -1675,74 +1646,82 @@ header .style-nav-bar-out {
   padding: .25em .55em;
 }
 
-.contact-page main .contact-form-section .form .submit input:hover {
+.contact-page main .contact-form-section form input[type=submit]:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid transparent;
 }
 
-@media (min-width: 45em) {
-  .contact-page main .contact-form-section {
-    padding-top: 2em;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .contact-page main .contact-form-section .form .name-form-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact-page main .contact-form-section .form .name-form-group .group {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
-    margin: .5em;
-  }
-  .contact-page main .contact-form-section .form .submit input {
-    font-size: 2em;
-  }
+.contact-page main .contact-form-section form .wpcf7-response-output {
+  display: none;
 }
 
-@media (min-width: 55em) {
-  .contact-page main .contact-form-section .form .submit input {
-    font-size: 3em;
+.contact-page main .contact-form-section .wpcf7-not-valid-tip {
+  color: #FA0029;
+}
+
+.contact-page main .contact-form-section p textarea {
+  width: 90vw;
+  margin: 0 auto;
+  outline: none;
+  border-radius: .15em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #1A1B26;
+  background-color: #cecece;
+  font-size: 1.5em;
+}
+
+.contact-page main .contact-form-section p input[type=submit] {
+  width: 100%;
+}
+
+@media (min-width: 45em) {
+  .contact-page main .contact-form-section form p label {
+    font-size: 1.5em;
+  }
+  .contact-page main .contact-form-section form .wpcf7-response-output {
+    display: none;
   }
 }
 
 @media (min-width: 75em) {
-  .contact-page main .contact-form-section .form {
-    position: relative;
+  .contact-page main .contact-form-section form {
+    width: 90vw;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 5em;
   }
-  .contact-page main .contact-form-section .form .name-form-group {
-    display: block;
+  .contact-page main .contact-form-section form .head {
+    width: 48%;
+    margin-right: 1em;
   }
-  .contact-page main .contact-form-section .form .group {
-    position: relative;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
-    margin-left: 2em;
+  .contact-page main .contact-form-section form .head p {
+    width: 100%;
   }
-  .contact-page main .contact-form-section .form .group .formGroup textarea {
-    height: 20em;
+  .contact-page main .contact-form-section form p {
+    width: 48%;
+    margin-right: 1em;
   }
-  .contact-page main .contact-form-section .form .submit input {
-    font-size: 2em;
-    width: 20%;
+  .contact-page main .contact-form-section form p label input {
+    font-size: 1em;
+    height: 3em;
   }
-  .contact-page main .contact-form-section .form .submit input:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid transparent;
+  .contact-page main .contact-form-section form p label textarea {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-page main .contact-form-section form input[type=submit] {
+    width: 50%;
   }
 }
 

@@ -107,12 +107,11 @@ $white-color: #fff;
     font-size: .75em;
     font-weight: 300;
     text-transform: uppercase;
-    width: 55%;
     display: block;
-    margin: 2em auto;
+    margin: 0 auto;
     border-radius: 5em;
     background-color: rgba($color: $main-color, $alpha: 0.9);
-    padding: .5em 0;
+    padding: .5em 1em;
     box-sizing: border-box;
     border: 1px solid $white-color;
     
@@ -505,8 +504,7 @@ header{
             }
 
             @include respond-to('bp3'){
-
-                height: 45vh;
+                height: 70vh;
         
                 h1{
                     font-size: 4em;
@@ -716,10 +714,11 @@ header{
                     .brush-stroke{
                         position: absolute;
                         z-index: 4;
-                        bottom: .5em;
+                        bottom: .7em;
                         left: 50%;
                         transform: translateX(-50%);
                         width: 70vw;
+                        height: 2em;
                     }
                 }
 
@@ -729,7 +728,7 @@ header{
 
                 .view-more{
                     @include the-buttons;
-                    margin-bottom: 6em;
+                    margin: 4em auto 6em auto;
                     width: 40%;
                     padding: .5em;
 
@@ -806,7 +805,8 @@ header{
                     .what-we-do-section-content-header{
 
                         .brush-stroke{
-                            width: 40%;
+                            width: 60%;
+                            bottom: 1.5em;
                         }
                     }
             
@@ -1339,15 +1339,19 @@ header{
             }
 
             @include respond-to('bp2'){
-
+                
                 .taxonomy-control-container{
-                    
+
+                    .taxonomy-control-container-bkg{
+                        height: 14em;
+                    }
+
                     .taxonomy-control-container-buttons{
                         width: 70%;
                     }
 
                     .container{
-                        margin-top: 6em;
+                        margin-top: 2em;
                     }
                 }
             }
@@ -1412,21 +1416,11 @@ header{
                 transform: translateX(-50%);
                 z-index: 0;
                 width: 70vw;
-            }
-            
-            ::before{
-                content: '';
-                position: absolute;
-                top: -1.25em;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 90vw;
-                height: auto;
-                height: .01em;
-                background-color: $highlight-color;
+                height: 1em;
             }
 
             @include respond-to('bp1.5'){
+                padding: 2em 0 3em 0;
 
                 h3{
                     font-size: 2em;
@@ -1443,20 +1437,15 @@ header{
             }
 
             @include respond-to('bp2'){
-                    margin-top: 7em;
+                padding-bottom: 4em;
 
                 h3{
                     font-size: 2em;
-                    padding-top: 1em;
                 }
 
                 .brush-stroke{
                     width: 60vw;
                     bottom: 2em;
-                }
-                
-                &::before{
-                    margin-top: -25em;
                 }
             }
 
@@ -1493,6 +1482,7 @@ header{
 //Contact
 .contact-page{
     overflow-x: hidden;
+
     main{
 
         .contact-top-image{
@@ -1542,149 +1532,147 @@ header{
         .contact-form-section{
             background-color: $main-color;
             width: 100vw;
+            padding-top: 2em;
 
-            .form{
+            .screen-reader-response{
+                display: none;
+            }
+
+            form{
                 position: relative;
                 z-index: 5;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 color: $highlight-color;
-        
-                .group{
-                    flex: 0 0 90%;
-                    margin: 0;
-        
+                width: 100%;
+
+                .head{
+
                     p{
-                        font-size: 1.5em;
-                        color: $highlight-color;
-                        font-weight: 300;
-                        padding-left: .5em;
-                        margin-bottom: 0;
-                        margin-top: 1em;
-                    }
-
-                    .formGroup{
-
-                        :focus{
-                            color: $ppg-blue;
-                        }    
-        
+                        width: 90%;
+                        margin: 0 auto;
             
-                        input{
-                            font-size: 2em;
-                            padding: .25em;
-                            box-sizing: border-box;
-                            width: 100%;
-                            outline: none;
-                            border-radius: .15em;
-                            background-color: rgba($color: $highlight-color, $alpha: 1);
-                        }
+                        label{
+                            color: $highlight-color;
+                            font-size: 1.25em;
+                            font-weight: 100;
     
-                        textarea {
-                            width: 100%;
-                            margin: 0 auto;
-                            outline: none;
-                            border-radius: .15em;
-                            padding: 1em;
-                            box-sizing: border-box;
-                            color: $main-color;
-                            background-color: $highlight-color;
-                            font-family: 'Ubuntu', sans-serif;
-                            font-size: 1.5em;
+                            span{
+                                color: $highkight-color;
+                            }
+    
+                            input{
+                                font-size: 1em;
+                                padding: .25em;
+                                box-sizing: border-box;
+                                width: 100%;
+                                outline: none;
+                                border-radius: .15em;
+                                background-color: rgba($color: $highlight-color, $alpha: 1);
+                            }
                         }
                     }
                 }
         
-                .submit{
-                    margin: 2em 0;
+                input[type=submit]{
                     text-align: center;
-                    width: 100%;
-                    
-                    input{
-                        @include the-buttons;
-                        color: $highlight-color;
-                        font-size: 1.5em;
-                        padding: .25em .55em;
-                    }
+                    width: 50%;
+                    @include the-buttons;
+                    color: $highlight-color;
+                    font-size: 1.5em;
+                    padding: .25em .55em;
+                }
+
+                .wpcf7-response-output{
+                    display: none;
                 }
             }
 
+            .wpcf7-not-valid-tip{
+                color: $highkight-color;
+            }
+            
+            p{
+                textarea {
+                    width: 90vw;
+                    margin: 0 auto;
+                    outline: none;
+                    border-radius: .15em;
+                    box-sizing: border-box;
+                    color: $main-color;
+                    background-color: $highlight-color;
+                    font-size: 1.5em;
+            }
+
+            input[type=submit]{
+                width: 100%;
+            }
+
+            }
+
             @include respond-to('bp1.5'){
-                padding-top: 2em;
-                box-sizing: border-box;
 
-                .form{
-
-                    .name-form-group{
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-
-                        .group{
-                            flex: 0 0 45%;
-                            margin: .5em;
+                form{
+    
+                    p{
+                        label{
+                            font-size: 1.5em;
                         }
                     }
-
-                    .submit{
-
-                        input{
-                            font-size: 2em;
-                        }
+    
+                    .wpcf7-response-output{
+                        display: none;
                     }
                 }
             }
 
             @include respond-to('bp2'){
 
-                .form{
 
-                    .submit{
 
-                        input{
-                            font-size: 3em;
-                        }
-                    }
-                }
             }
 
             @include respond-to('bp3'){
 
-                .form{
-                    position: relative;
+                form{
+                    width: 90vw;
+                    margin: 0 auto;
                     display: flex;
-                    flex-wrap: wrap;
-                    
-                    .name-form-group{
-                        display: block;
-                    }
+                    justify-content: center;
+                    flex-direction: row;
+                    padding: 0 5em;
 
-                    .group{
-                        position: relative;
-                        flex: 0 0 45%;
-                        margin-left: 2em;
+                    .head{
+                        width: 48%;
+                        margin-right: 1em;
 
-
-                        .formGroup{
-
-                            textarea{
-                                height: 20em;
-                            }
+                        p{
+                            width: 100%;
                         }
                     }
 
-                    .submit{
+                    p{
+                        width: 48%;
+                        margin-right: 1em;
+            
+                        label{
+    
+                            input{
+                                font-size: 1em;
+                                height: 3em;
 
-                        input{
-                            font-size: 2em;
-                            width: 20%;
-
-                            &:hover{
-                                background-color: rgba($color: $white-color, $alpha: .1);
-                                border: 1px solid transparent;
+                            }
+    
+                            textarea {
+                                    width: 100%;
+                                    height: 100%;
                             }
                         }
+                    }
+            
+                    input[type=submit]{
+                        width: 50%;
                     }
                 }
             }

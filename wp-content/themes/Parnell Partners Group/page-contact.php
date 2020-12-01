@@ -8,7 +8,7 @@
             <h1>Let's discuss this</h1>
         </div>
 
-        <div class="contact-form-section">
+        <!-- <div class="contact-form-section">
             <form action="" method="post" class="form">
                 <div class="name-form-group">
                     <div class="group">
@@ -51,7 +51,9 @@
                     <input name="submit" id="submit" type="submit" value="Submit" />
                 </div>
             </form>
-        </div>
+        </div> -->
+
+        <div class="contact-form-section"><?php the_content()?></div>
 
         <!----------------------------------------------------->
         <!----------------- Address Section ------------------->
