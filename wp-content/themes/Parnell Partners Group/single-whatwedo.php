@@ -1,9 +1,9 @@
 <?php get_header() ?>
 
-<?php
+  <?php
       while (have_posts()) :
         the_post();
-        get_template_part('partials/content','single-what-we-do');
+        get_template_part('partials/content','single-whatwedo');
     endwhile;
   ?>
 

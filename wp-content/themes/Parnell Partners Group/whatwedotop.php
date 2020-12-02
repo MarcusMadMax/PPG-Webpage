@@ -10,7 +10,7 @@
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
 
-            get_template_part('partials/content','what-we-do-top');
+            get_template_part('partials/content','whatwedotop');
         }
         
         /* Restore original Post Data */

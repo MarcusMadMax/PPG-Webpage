@@ -13,14 +13,14 @@
 
         <?php
             // The Query
-            $args = array('post_type'=>'what we do');
+            $args = array('post_type'=>'whatwedo');
             $the_query = new WP_Query( $args );
                 
             // The Loop
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
 
-                get_template_part('partials/content','what-we-do');
+                get_template_part('partials/content','whatwedo');
             }
             
             /* Restore original Post Data */
