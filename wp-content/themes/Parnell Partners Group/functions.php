@@ -9,14 +9,14 @@
         'label'     => 'What we do',
         'menu_icon'   => 'dashicons-hammer',
     );
-    register_post_type( 'whatwedo', $args );
+    register_post_type( 'what_we_do', $args );
 
     $args = array(
         'public'    => true,
-        'label'     => 'What we do top',
+        'label'     => 'Events',
         'menu_icon'   => 'dashicons-hammer',
     );
-    register_post_type( 'whatwedotop', $args );
+    register_post_type( 'events', $args );
 
     $args = array(
         'public'    => true,

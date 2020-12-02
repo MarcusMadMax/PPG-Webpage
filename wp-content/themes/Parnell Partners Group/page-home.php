@@ -25,10 +25,56 @@
     </div>
 
     <!----------------------------------------------------------->
-    <!----------------- Whatwe do top Section ------------------->
+    <!----------------- Events Section ------------------->
     <!----------------------------------------------------------->
 
-    <?php get_template_part('whatwedotop')?>
+    <div class="link-section">
+        <ul class="link-backgrounds">
+
+          <li>
+            <div class="list-items">
+              <a href="/PPG/client-events"><img src="<?php echo get_template_directory_uri()?>/assets/img/toyota-icy-sm.jpg" alt=""></a>
+              <div class="list-comments">
+                <a href="/PPG/client-events">Client Events</a>
+                <button><a href="/PPG/client-events">Do it</a></button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-items">
+              <a href="/PPG/incentive-experiences"><img src="<?php echo get_template_directory_uri()?>/assets/img/nz-bethells-beach-sm.jpg" alt=""></a>
+              <div class="list-comments">
+                <a href="/PPG/incentive-experiences">Inscentive Experience<br>NZ & International</a>
+                <button><a href="/PPG/incentive-experiences">Feel it</a></button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-items">
+              <a href="/PPG/destination-mgnt-services"><img src="<?php echo get_template_directory_uri()?>/assets/img/dolphins-sm.jpg" alt=""></a>
+              <div class="list-comments">
+                <a href="/PPG/destination-mgnt-services">Destination<br>Management<br>Service</a>
+                <!--- Photo from NZ--->
+                <button><a href="/PPG/destination-mgnt-services">See it</a></button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="list-items">
+              <a href="what-we-do.html"><img src="<?php echo get_template_directory_uri()?>/assets/img/our-work/rugby/all-blacks-haka-1.jpg" alt=""></a>
+              <div class="list-comments">
+                <a href="what-we-do.html">Sporting<br>Events</a>
+                <!--- Photo from Rugby--->
+                <button><a href="what-we-do.html">Adore it</a></button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
 
 
     <!-------------------------------------------------->
@@ -45,10 +91,55 @@
     </div>
 
     <!-------------------------------------------------------->
-    <!----------------- what we do Section ------------------->
+    <!----------------- What we do Section ------------------->
     <!-------------------------------------------------------->
 
-    <?php get_template_part('whatwedo')?>
+    <div class="what-we-do-section">
+        <div class="what-we-do-section-bg-img">
+          <img class="cover-bottom" src="<?php echo get_template_directory_uri()?>/assets/img/queens-warft/1904-queens-wharf-queens-street.jpg"
+            alt="Queens warft at 1904">
+        </div>
+        <div class="what-we-do-section-content">
+          <div class="what-we-do-section-content-header">
+            <h1>What We Do</h1>
+            <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/brush-stroke/brush-stroke.png" alt="">
+          </div>
+          <ul class="what-we-do-backgrounds">
+
+            <li>
+              <div class="list-items">
+                <a href="/PPG/what_we_do"><img src="<?php echo get_template_directory_uri()?>/assets/img/portfolio/olympic-games.jpg" alt=""></a>
+                <div class="list-comments">
+                  <a href="/PPG/what_we_do">Olympics</a>
+                  <button><a href="/PPG/what_we_do">Go for it</a></button>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="list-items">
+                <a href="/PPG/what_we_do"><img src="<?php echo get_template_directory_uri()?>/assets/img/our-work/rugby/rugby.jpg" alt=""></a>
+                <div class="list-comments">
+                  <a href="/PPG/what_we_do">Rugby</a>
+                  <button><a href="/PPG/what_we_do">Try it</a></button>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="list-items">
+                <a href="/PPG/what_we_do"><img src="<?php echo get_template_directory_uri()?>/assets/img/amaricas-cup/team-nz2.jpg" alt=""></a>
+                <div class="list-comments">
+                  <a href="/PPG/what_we_do">Sailing</a>
+                  <button><a href="/PPG/what_we_do">Sail it</a></button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+          <button class="view-more"><a href="/PPG/what_we_do">View more</a></button>
+        </div>
+      </div>
 
   </main>
 </div>

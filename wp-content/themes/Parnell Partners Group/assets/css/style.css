@@ -427,6 +427,10 @@ header .style-nav-bar-out {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   width: 100vw;
 }
@@ -745,6 +749,10 @@ header .style-nav-bar-out {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   width: 100vw;
 }
@@ -1502,31 +1510,30 @@ header .style-nav-bar-out {
 }
 
 @media (min-width: 55em) {
-  .what-we-do-page main .quote-section {
-    padding-bottom: 4em;
-  }
   .what-we-do-page main .quote-section h3 {
     font-size: 2em;
   }
   .what-we-do-page main .quote-section .brush-stroke {
     width: 60vw;
-    bottom: 2em;
+    bottom: 3em;
   }
 }
 
 @media (min-width: 75em) {
   .what-we-do-page main .quote-section {
-    padding-bottom: 2em;
+    height: 100%;
+    margin-bottom: 1em;
   }
   .what-we-do-page main .quote-section .brush-stroke {
-    top: -4em;
-    width: 20vw;
+    top: -1em;
+    width: 50vw;
+    height: 2em;
   }
   .what-we-do-page main .quote-section h3 {
     width: 60%;
     margin: 0 auto;
     font-weight: 100;
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -1988,6 +1995,13 @@ header .style-nav-bar-out {
     top: 0;
     width: 100%;
     height: 35vh;
+  }
+  .generic-page main .divider-section .divider-text h3 {
+    top: 5em;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
