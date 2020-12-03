@@ -7,6 +7,7 @@ const navLinkA = document.querySelectorAll('.nav-links li a')
 const address = document.querySelector('.contact-city')
 const taxControlButtons = document.querySelector('.taxonomy-control-container-buttons')
 
+
 const navSlide = () => {
     bars.addEventListener('click', () => {
         //Toggle Nav
@@ -56,6 +57,17 @@ if (w >= targetWidth) {
         }
     }
 }
+
+var image = ''
+
+for (var i=0;i<document.getElementsByClassName('images').length ;i++) {
+    if ( i % 2 === 0) { even }
+    else { odd }
+  }
+
+  console.log(image)
+
+
 
 //Boat is moving in
 $(function () {

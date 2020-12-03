@@ -64,11 +64,11 @@
 
           <li>
             <div class="list-items">
-              <a href="what-we-do.html"><img src="<?php echo get_template_directory_uri()?>/assets/img/our-work/rugby/all-blacks-haka-1.jpg" alt=""></a>
+              <a href="/PPG/sporting-events"><img src="<?php echo get_template_directory_uri()?>/assets/img/our-work/rugby/all-blacks-haka-1.jpg" alt=""></a>
               <div class="list-comments">
-                <a href="what-we-do.html">Sporting<br>Events</a>
+                <a href="/PPG/sporting-events">Sporting<br>Events</a>
                 <!--- Photo from Rugby--->
-                <button><a href="what-we-do.html">Adore it</a></button>
+                <button><a href="/PPG/sporting-events">Adore it</a></button>
               </div>
             </div>
           </li>

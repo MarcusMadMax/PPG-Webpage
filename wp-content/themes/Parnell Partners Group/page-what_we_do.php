@@ -9,47 +9,40 @@
                 <div class="taxonomy">
                         <div class="taxonomy-control-container">
                                 <div class="taxonomy-control-container-bkg">
-                                        <div class="taxonomy-control-container-buttons">
-                                                <button type="button" data-filter="all">All</button>
-                                                <button type="button" data-filter=".client-events">Client Events</button>
-                                                <button type="button" data-filter=".expiriences">Incentive Experiences</button>
-                                                <button type="button" data-filter=".destination-services">Destination MGNT Services</button>
-                                                <button type="button" data-filter=".sporting-events">Sporting Events</button>
-                                        </div>
-                                        <div class="color"></div>
                                 </div>
+                                <div class="taxonomy-control-container-buttons">
+                                        <button type="button" data-filter="all">All</button>
+
+                                        <?php
+                                                $terms = get_terms( 'event', array('hide_empty' => false));
+                                                foreach($terms as $term){
+                                        
+                                                        echo '<button type="button" data-filter=".'.$term->slug.'">'.$term->name.'</button>';
+                                                }
+                                        ?>
+
+                                </div>
+                                <div class="color"></div>
 
                                 <div class="mix container">
-                                        <div class="mix sporting-events events" data-order="1"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/rugby/rugby.jpg" alt=""></a>
-                                                <div class="list-comments">
-                                                        <a href="/index.php/rugby">Olympics</a>
-                                                </div>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="2"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/amaricas-cup/team-nz2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="3"> <a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/cricket.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="5"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/football/football.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="6"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/motor-sports/f1.jpg" alt="">
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="7"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/superbowl/super-bowl.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="8"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/commonwealth-games/commonwealth-games2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix sporting-events events" data-order="9"><a href="generic.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/our-work/olympics/olympic-rings.jpg" alt=""></a>
-                                        </div>
-                                        <div class="mix expiriences events" data-order="10"><a href="events.html"><img
-                                                src="<?php echo get_template_directory_uri()?>/assets/img/general/gala-dinner.jpg" alt=""></a>
-                                        </div>
+
+                                        <?php
+
+                                                $args = array('post_type' => 'photo');
+                                                // The Query
+                                                $the_query = new WP_Query( $args );
+
+                                                // The Loop
+                                                while ( $the_query->have_posts() ) {
+                                                        $the_query->the_post();
+                                                        get_template_part('partials/content', 'photo');
+                                                }
+
+                                                /* Restore original Post Data */
+                                                wp_reset_postdata();
+
+                                        ?>
+
                                 </div>
                         </div>
                 </div>

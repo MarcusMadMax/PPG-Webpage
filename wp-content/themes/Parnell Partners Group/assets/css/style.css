@@ -14,7 +14,7 @@ body {
 
 header nav {
   position: fixed;
-  z-index: 7;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -93,9 +93,9 @@ header nav .nav-links li a {
 
 header nav .bars {
   position: fixed;
-  z-index: 70;
-  right: 0;
-  top: 0;
+  z-index: 100;
+  right: .5em;
+  top: .5em;
   display: block;
   cursor: pointer;
 }
@@ -1291,17 +1291,15 @@ header .style-nav-bar-out {
 
 .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-bkg {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100vw;
-  height: 19vh;
+  height: 9em;
   background-image: url("../img/backgrounds/footer-background-dark.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
 }
 
-.what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-bkg .color {
+.what-we-do-page main .taxonomy .taxonomy-control-container .color {
   display: block;
   position: absolute;
   top: 0;
@@ -1313,8 +1311,8 @@ header .style-nav-bar-out {
 }
 
 .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons {
-  position: relative;
-  top: 1em;
+  position: absolute;
+  top: 3em;
   left: 1em;
   z-index: 10;
   display: -webkit-box;
@@ -1325,7 +1323,7 @@ header .style-nav-bar-out {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  width: 70%;
   height: auto;
 }
 
@@ -1343,7 +1341,7 @@ header .style-nav-bar-out {
   width: 100%;
 }
 
-.what-we-do-page main .taxonomy .container {
+.what-we-do-page main .taxonomy .taxonomy-control-container .container {
   z-index: 15;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1357,7 +1355,7 @@ header .style-nav-bar-out {
   margin: 1em auto 3em auto;
 }
 
-.what-we-do-page main .taxonomy .container .events {
+.what-we-do-page main .taxonomy .taxonomy-control-container .container .events {
   width: 8em;
   height: auto;
   -webkit-box-flex: 1;
@@ -1365,7 +1363,7 @@ header .style-nav-bar-out {
           flex: 1 0 33.3%;
 }
 
-.what-we-do-page main .taxonomy .container .events img {
+.what-we-do-page main .taxonomy .taxonomy-control-container .container .events img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1376,13 +1374,14 @@ header .style-nav-bar-out {
 
 @media (min-width: 45em) {
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-bkg {
-    height: 18em;
+    height: 9em;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons {
-    width: 70%;
+    width: 50%;
+    top: 4em;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons button {
-    font-size: 1em;
+    font-size: .5em;
     height: auto;
   }
 }
@@ -1392,7 +1391,10 @@ header .style-nav-bar-out {
     height: 14em;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons {
-    width: 70%;
+    width: 60%;
+  }
+  .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons button {
+    font-size: 1em;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .container {
     margin-top: 2em;
@@ -1401,68 +1403,70 @@ header .style-nav-bar-out {
 
 @media (min-width: 75em) {
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-bkg {
-    height: 23em;
+    height: 20em;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons {
-    width: 50%;
-    top: 10em;
-    margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: relative;
-    z-index: 10;
+    width: 60%;
+    padding-top: 6em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons button {
     cursor: pointer;
   }
   .what-we-do-page main .taxonomy .taxonomy-control-container .taxonomy-control-container-buttons button:hover {
     color: #FA0029;
-    background: #0A57A4;
   }
-  .what-we-do-page main .taxonomy .container {
-    width: 50vw;
-    margin: 0 auto;
-  }
-  .what-we-do-page main .taxonomy .container .events {
-    position: relative;
-  }
-  .what-we-do-page main .taxonomy .container .events .list-comments {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(26, 27, 38, 0.7);
-    display: none;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  .what-we-do-page main .taxonomy .container .events .list-comments a {
-    font-family: 'Ubuntu', sans-serif;
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    font-size: 2em;
-    display: block;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-shadow: 4px 4px black;
-    text-decoration: none;
-  }
-  .what-we-do-page main .taxonomy .container .events:hover .list-comments {
-    width: 100%;
-    display: block;
-  }
+}
+
+.what-we-do-page main .container {
+  width: 50vw;
+  margin-top: 0 auto;
+}
+
+.what-we-do-page main .container .events {
+  position: relative;
+  margin: .1px solid transparent;
+}
+
+.what-we-do-page main .container .list-comments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 27, 38, 0.7);
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.what-we-do-page main .container .list-comments a {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 4px 4px black;
+  text-decoration: none;
+}
+
+.what-we-do-page main .container:hover .list-comments {
+  width: 100%;
+  display: block;
 }
 
 .what-we-do-page main .quote-section {
@@ -1979,7 +1983,7 @@ header .style-nav-bar-out {
     height: 21vh;
   }
   .generic-page main .divider-section .divider-text h3 {
-    font-size: 1.25em;
+    font-size: 120%;
   }
 }
 
@@ -1997,7 +2001,7 @@ header .style-nav-bar-out {
     height: 35vh;
   }
   .generic-page main .divider-section .divider-text h3 {
-    top: 5em;
+    top: 25%;
     width: 70%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2026,6 +2030,17 @@ header .style-nav-bar-out {
 .generic-page main .images-section .top-images .image img, .generic-page main .images-section .bottom-images .image img {
   width: 100%;
   height: 10em;
+}
+
+.generic-page main .images-section .top-images .first-image img, .generic-page main .images-section .top-images .third-image img, .generic-page main .images-section .bottom-images .first-image img, .generic-page main .images-section .bottom-images .third-image img {
+  border: 2px solid green;
+  position: relative;
+  left: -100em;
+}
+
+.generic-page main .images-section .top-images .lef-images-in, .generic-page main .images-section .bottom-images .lef-images-in {
+  -webkit-transform: translateX(100em);
+          transform: translateX(100em);
 }
 
 .generic-page main .images-section .top-full-width-image {
