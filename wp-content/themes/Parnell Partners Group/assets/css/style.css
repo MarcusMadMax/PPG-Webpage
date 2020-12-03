@@ -1442,12 +1442,12 @@ header .style-nav-bar-out {
   transition: all 1s;
 }
 
-.what-we-do-page main .container .list-comments a {
+.what-we-do-page main .container .list-comments p {
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   width: 100%;
   color: #fff;
-  font-size: 2em;
+  font-size: .9em;
   display: block;
   text-align: center;
   display: -webkit-box;
@@ -1467,6 +1467,12 @@ header .style-nav-bar-out {
 .what-we-do-page main .container:hover .list-comments {
   width: 100%;
   display: block;
+}
+
+@media (min-width: 75em) {
+  .what-we-do-page main .container .list-comments p {
+    font-size: 2em;
+  }
 }
 
 .what-we-do-page main .quote-section {
@@ -1946,71 +1952,60 @@ header .style-nav-bar-out {
   position: relative;
   top: -3em;
   z-index: 5;
-  width: 100vw;
-  height: auto;
 }
 
 .generic-page main .divider-section .divider-text {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 15vh;
+  position: relative;
+  width: 100vw;
+  height: 5em;
 }
 
 .generic-page main .divider-section .divider-text img {
-  width: 100vw;
+  border: 2px soldi green;
+  width: 100%;
   height: 100%;
 }
 
-.generic-page main .divider-section .divider-text h3 {
+.generic-page main .divider-section p {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: .7em;
-  font-weight: 300;
-  text-align: center;
-  padding: 0 4em;
-}
-
-.generic-page main .divider-section .divider-text h3 span {
-  color: #FA0029;
-  font-weight: 700;
+  font-size: .5em;
+  padding: 0 6em;
 }
 
 @media (min-width: 45em) {
   .generic-page main .divider-section .divider-text {
-    height: 21vh;
+    height: 10em;
   }
-  .generic-page main .divider-section .divider-text h3 {
-    font-size: 120%;
+  .generic-page main .divider-section p {
+    font-size: 1em;
   }
 }
 
 @media (min-width: 55em) {
-  .generic-page main .divider-section .divider-text h3 {
-    font-size: 1.8em;
+  .generic-page main .divider-section .divider-text {
+    height: 12em;
+  }
+  .generic-page main .divider-section p {
+    font-size: 1.25em;
   }
 }
 
 @media (min-width: 75em) {
   .generic-page main .divider-section .divider-text {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 35vh;
+    height: 21em;
   }
-  .generic-page main .divider-section .divider-text h3 {
-    top: 25%;
-    width: 70%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+  .generic-page main .divider-section p {
+    font-size: 1.5em;
+    padding: 0 16em;
   }
 }
 
 .generic-page main .images-section {
-  margin-top: 6em;
+  margin-top: 0em;
+  overflow: hidden;
 }
 
 .generic-page main .images-section .top-images, .generic-page main .images-section .bottom-images {
@@ -2022,6 +2017,7 @@ header .style-nav-bar-out {
 }
 
 .generic-page main .images-section .top-images .image, .generic-page main .images-section .bottom-images .image {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
@@ -2030,17 +2026,6 @@ header .style-nav-bar-out {
 .generic-page main .images-section .top-images .image img, .generic-page main .images-section .bottom-images .image img {
   width: 100%;
   height: 10em;
-}
-
-.generic-page main .images-section .top-images .first-image img, .generic-page main .images-section .top-images .third-image img, .generic-page main .images-section .bottom-images .first-image img, .generic-page main .images-section .bottom-images .third-image img {
-  border: 2px solid green;
-  position: relative;
-  left: -100em;
-}
-
-.generic-page main .images-section .top-images .lef-images-in, .generic-page main .images-section .bottom-images .lef-images-in {
-  -webkit-transform: translateX(100em);
-          transform: translateX(100em);
 }
 
 .generic-page main .images-section .top-full-width-image {
@@ -2069,7 +2054,7 @@ header .style-nav-bar-out {
 
 @media (min-width: 45em) {
   .generic-page main .images-section {
-    margin-top: 11em;
+    margin-top: 0em;
   }
   .generic-page main .images-section .top-images, .generic-page main .images-section .bottom-images {
     -webkit-box-pack: center;
@@ -2087,16 +2072,7 @@ header .style-nav-bar-out {
   }
 }
 
-@media (min-width: 55em) {
-  .generic-page main .images-section {
-    margin-top: 16em;
-  }
-}
-
 @media (min-width: 75em) {
-  .generic-page main .images-section {
-    margin-top: 26em;
-  }
   .generic-page main .images-section .top-images .image img, .generic-page main .images-section .bottom-images .image img {
     width: 100%;
     height: 25em;

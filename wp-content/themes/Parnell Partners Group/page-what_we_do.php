@@ -11,13 +11,13 @@
                                 <div class="taxonomy-control-container-bkg">
                                 </div>
                                 <div class="taxonomy-control-container-buttons">
-                                        <button type="button" data-filter="all">All</button>
+                                        <button class="animate__animated animate__backInLeft animate__delay-1s" type="button" data-filter="all">All</button>
 
                                         <?php
                                                 $terms = get_terms( 'event', array('hide_empty' => false));
                                                 foreach($terms as $term){
                                         
-                                                        echo '<button type="button" data-filter=".'.$term->slug.'">'.$term->name.'</button>';
+                                                        echo '<button class="animate__animated animate__backInLeft animate__delay-1s type="button" data-filter=".'.$term->slug.'">'.$term->name.'</button>';
                                                 }
                                         ?>
 
@@ -52,7 +52,7 @@
                         <!-------------------------------------------------->
 
                 <div class="quote-section">
-                        <h3>Our focus is delivering optimal investment solutions, networking opportunities and an unforgettable client
+                        <h3 class="animate__animated animate__bounce">Our focus is delivering optimal investment solutions, networking opportunities and an unforgettable client
                                 experience.</h3>
                         <img class="brush-stroke" src="<?php echo get_template_directory_uri()?>/assets/img/brush-stroke/brush-stroke.png" alt="">
                 </div>

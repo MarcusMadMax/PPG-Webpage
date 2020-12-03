@@ -21,11 +21,10 @@
             <!-------------------------------------------------->
 
             <div class="divider-section">
-
                 <div class="divider-text">
                     <img class="cover-top" src="<?php echo get_template_directory_uri()?>/assets/img/backgrounds/footer-background-light.svg" alt="">
-                    <h3><?php the_content()?></h3>
                 </div>
+                <p data-aos='fade'><?php the_content()?></p>
             </div>
 
             <!-------------------------------------------------->
@@ -34,30 +33,30 @@
             <div class="images-section">
                 <div class="top-images">
 
-                    <div class="first-image image">
+                    <div class="first-image image" data-aos="fade-right">
                         <img class="cover-center" src="<?php the_field('first_image')?>">
                     </div>
-                    <div class="second-image image">
+                    <div class="second-image image" data-aos="fade-left">
                         <img class="cover-center" src="<?php the_field('second_image')?>">
                     </div>
-                    <div class="third-image image">
+                    <div class="third-image image" data-aos="fade-right">
                         <img class="cover-center" src="<?php the_field('third_image')?>">
                     </div>
-                    <div class="fourth-image image">
+                    <div class="fourth-image image" data-aos="fade-left">
                         <img class="cover-center" src="<?php the_field('fourth_image')?>">
                     </div>
 
                 </div>
 
-                <div class="top-full-width-image">
+                <div class="top-full-width-image" data-aos='zoom-in'>
                     <img class="cover-center" src="<?php the_field('full_width_center_image')?>">
                 </div>
 
                 <div class="bottom-images">
-                    <div class="first-image image">
+                    <div class="first-image image" data-aos="fade-right">
                         <img class="cover-center" src="<?php the_field('fifth_image')?>">
                     </div>
-                    <div class="second-image image">
+                    <div class="second-image image" data-aos="fade-left">
                         <img class="cover-center" src="<?php the_field('sixth_image')?>">
                     </div>
                 </div>

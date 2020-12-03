@@ -1,3 +1,30 @@
+AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+    // Global settings:
+    disable: window.innerWidth < 1024, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+  
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 220, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 500, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  
+  });
+
 const bars = document.querySelector('.bars')
 const nav = document.querySelector('.nav-links')
 const navLinks = document.querySelectorAll('.nav-links li')
@@ -6,7 +33,7 @@ const navBar = document.querySelector('nav')
 const navLinkA = document.querySelectorAll('.nav-links li a')
 const address = document.querySelector('.contact-city')
 const taxControlButtons = document.querySelector('.taxonomy-control-container-buttons')
-
+const images = document.querySelector('.generic-page .image');
 
 const navSlide = () => {
     bars.addEventListener('click', () => {
@@ -22,25 +49,30 @@ const navSlide = () => {
             }
         })
 
-        //Monbile logo comes in
+        //Nav bar logo comes in
         navBarLogo.classList.toggle('navBarLogoReize')
 
         //Bars Animation
         bars.classList.toggle('toggle')
         if ($('.what-we-do-page').length > 0) {
-        //Get rid of taxonomy
-        taxControlButtons.classList.toggle('no-tax')
+            //Get rid of taxonomy
+            taxControlButtons.classList.toggle('no-tax')
         }
     })
 
 }
 navSlide()
 
+// moveRight.seek(100)
+
+
+
 w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
 var targetWidth = 1200;
 if (w >= targetWidth) {
     // When scrolling NavBar changes in Desktop View
     window.onscroll = function () { scrollFunction() };
+    
 
     scrollFunction = () => {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -57,16 +89,6 @@ if (w >= targetWidth) {
         }
     }
 }
-
-var image = ''
-
-for (var i=0;i<document.getElementsByClassName('images').length ;i++) {
-    if ( i % 2 === 0) { even }
-    else { odd }
-  }
-
-  console.log(image)
-
 
 
 //Boat is moving in

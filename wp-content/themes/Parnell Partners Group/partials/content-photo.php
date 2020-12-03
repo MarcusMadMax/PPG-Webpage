@@ -13,7 +13,7 @@ foreach($terms as $term){
         <img src="<?php the_field('photo')?>" alt="">
     </a>
     <div class="list-comments">
-            <a href="/index.php/rugby"></a>
+            <p><?php the_field('type')?></p>
     </div>
 </div>
 

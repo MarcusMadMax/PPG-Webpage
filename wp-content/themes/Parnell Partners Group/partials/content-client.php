@@ -1,2 +1,2 @@
 
-    <img class="fill" src="<?php the_field('photo')?>">
+    <img class="fill" data-aos="flip-right" src="<?php the_field('photo')?>">
