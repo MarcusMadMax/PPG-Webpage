@@ -1,10 +1,13 @@
 <?php
 $terms = get_the_terms( get_the_ID(), 'event' );
-
 $classes = '';
-foreach($terms as $term){
-    $classes .= $term->slug . ' ';
+
+if($terms){
+    foreach($terms as $term){
+        $classes .= $term->slug . ' ';
+    }
 }
+
 
 ?>
 
