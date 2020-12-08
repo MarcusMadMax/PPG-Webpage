@@ -8,8 +8,8 @@
     <!-------------------------------------------------->
 
     <div class="video-section">
-      <video class="ppg-video" preload="auto" loop autoplay>
-        <source src="<?php echo get_template_directory_uri()?>/assets/video/PPG.mp4" type="video/mp4">
+      <video class="ppg-video" preload="auto" controls loop autoplay>
+        <source src="<?php echo get_template_directory_uri()?>/assets/video/PPG-animation-americas-cup_2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -45,7 +45,7 @@
             <div class="list-items">
               <a href="/PPG/incentive-experiences"><img src="<?php echo get_template_directory_uri()?>/assets/img/nz-bethells-beach-sm.jpg" alt=""></a>
               <div class="list-comments">
-                <a href="/PPG/incentive-experiences">Inscentive Experience<br>NZ & International</a>
+                <a href="/PPG/incentive-experiences">Inscentive Experience</a>
                 <button><a href="/PPG/incentive-experiences">Feel it</a></button>
               </div>
             </div>
@@ -95,10 +95,10 @@
     <!-------------------------------------------------------->
 
     <div class="what-we-do-section">
-        <div class="what-we-do-section-bg-img">
+        <!-- <div class="what-we-do-section-bg-img">
           <img class="cover-bottom" src="<?php echo get_template_directory_uri()?>/assets/img/queens-warft/1904-queens-wharf-queens-street.jpg"
             alt="Queens warft at 1904">
-        </div>
+        </div> -->
         <div class="what-we-do-section-content">
           <div class="what-we-do-section-content-header">
             <h1>What We Do</h1>
