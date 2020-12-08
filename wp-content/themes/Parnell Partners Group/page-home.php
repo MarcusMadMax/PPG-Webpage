@@ -45,7 +45,7 @@
             <div class="list-items">
               <a href="/PPG/incentive-experiences"><img src="<?php echo get_template_directory_uri()?>/assets/img/nz-bethells-beach-sm.jpg" alt=""></a>
               <div class="list-comments">
-                <a href="/PPG/incentive-experiences">Inscentive Experience</a>
+                <a href="/PPG/incentive-experiences">Incentive Experience</a>
                 <button><a href="/PPG/incentive-experiences">Feel it</a></button>
               </div>
             </div>

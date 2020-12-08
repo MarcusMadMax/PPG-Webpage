@@ -14,7 +14,7 @@
           </div>
           <div class="footer-social">
             <a href="https://www.facebook.com/parnellpartnersgroup/" target="_blank"><i
-                class="fab fa-instagram"></i></a>
+                class="fab fa-facebook"></i></a>
             <a href="https://nz.linkedin.com/company/parnell-partners-group" target="_blank"><i
                 class="fab fa-linkedin-in"></i></a>
           </div>

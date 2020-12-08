@@ -14,7 +14,7 @@
     $args = array(
         'label'        => 'Events',
         'public'       => true,
-        'rewrite'      => false,
+        // 'rewrite'      => false,
         'hierarchical' => true,
         'show_in_nav_menus' => true
     );
